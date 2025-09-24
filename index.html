@@ -5,6 +5,9 @@
 <title>Cold Outreach Kit – 200 Templates + Mail-Merge</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="200 ready-to-use cold email & DM scripts plus a plug-and-play mail-merge sheet. Designed to help you get replies faster. Instant download.">
+<link rel="canonical" href="https://ondrejkaestli.github.io/outreach-kit-site/">
+<meta name="robots" content="index,follow">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://unpkg.com/mvp.css">
 
@@ -31,24 +34,29 @@
   .grid img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; }
   .cta { display:inline-block; padding: 14px 24px; border-radius: 10px; border: 1px solid #222; text-decoration: none; }
   .note { font-size: 12px; color: #555; margin-top: 8px; }
-  footer { margin: 4rem auto; text-align:center; font-size: 14px; }
+  footer { max-width: 980px; margin: 4rem auto; text-align:center; font-size: 14px; }
   @media (max-width: 780px){ .grid{ grid-template-columns:1fr; } }
   .badge { display:inline-block;padding:6px 10px;border:1px solid #d1d5db;border-radius:8px;font-size:12px;margin-top:8px; }
+  .trustline { margin-top: 10px; font-size: 12px; color: #666; }
 </style>
 </head>
 <body>
 <header class="hero">
   <h1>Book More Meetings in 7 Days</h1>
   <p>200 ready-to-use Cold Email & DM Scripts + Plug-and-Play Mail-Merge Sheet</p>
-  <p><a class="cta" href="https://okaestli.gumroad.com/l/swnvon" id="buy">Get the Kit (CHF 19)</a></p>
+  <p>
+    <a class="cta" href="https://okaestli.gumroad.com/l/swnvon" id="buy-top" aria-label="Buy the Cold Outreach Kit for CHF 19 on Gumroad">
+      Get the Kit (CHF 19)
+    </a>
+  </p>
   <p class="note">Designed to help you get replies faster. Results vary. No guarantees.</p>
   <p><small>14-day voluntary refund if it’s not helpful. Statutory rights remain unaffected.</small></p>
 </header>
 
 <main>
-  <section class="grid">
+  <section class="grid" id="whats-inside">
     <div>
-      <img src="./assets/hero.jpg" alt="workspace">
+      <img src="./assets/hero.jpg" alt="Clean workspace desk with laptop and notebook">
     </div>
     <div>
       <h2>What’s inside</h2>
@@ -60,12 +68,13 @@
         <li><strong>Refund</strong>: 14-day money-back guarantee</li>
       </ul>
       <span class="badge">Instant download via Gumroad</span><br><br>
-      <a class="cta" href="https://okaestli.gumroad.com/l/swnvon">Get the Kit (CHF 19)</a>
+      <a class="cta" href="https://okaestli.gumroad.com/l/swnvon" aria-label="Buy the Cold Outreach Kit for CHF 19 on Gumroad">Get the Kit (CHF 19)</a>
+      <div class="trustline">Questions? <a href="mailto:okaestli@gmail.com">Email support</a> • <a href="#faq">See FAQ</a></div>
     </div>
   </section>
 
   <!-- Expanded, compliant FAQ -->
-  <section class="grid">
+  <section class="grid" id="faq">
     <div>
       <h2>FAQ</h2>
 
@@ -103,13 +112,16 @@
       <p>Based on tested outreach patterns: clear subject, proof up front, one simple ask. Built to make messaging faster and more consistent.</p>
     </div>
     <div>
-      <img src="./assets/detail.jpg" alt="email">
+      <img src="./assets/detail.jpg" alt="Email composition screen on a laptop">
     </div>
   </section>
 </main>
 
 <footer>
-  <a href="./privacy.html">Privacy</a> • <a href="./terms.html">Terms</a>
+  <div>
+    <a href="./privacy.html">Privacy</a> • <a href="./terms.html">Terms</a>
+    <div class="trustline">Instant digital delivery via Gumroad • Secure checkout • 14-day voluntary refund</div>
+  </div>
 </footer>
 
 <!-- Optional: Cloudflare Web Analytics (cookieless). Replace EXAMPLE_TOKEN and uncomment -->
